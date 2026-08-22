@@ -50,7 +50,7 @@ CREATE TABLE "Message" (
     "role" "MessageRole" NOT NULL,
     "status" "MessageStatus" NOT NULL DEFAULT 'COMPLETE',
     "content" TEXT NOT NULL,
-    "parts" JSONB NOT NULL,
+    "parts" JSONB,
     "metadata" JSONB,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
